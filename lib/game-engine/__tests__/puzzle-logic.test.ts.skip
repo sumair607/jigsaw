@@ -1,0 +1,207 @@
+import { describe, it, expect, beforeEach } from "vitest";
+import { puzzleReducer, initialPuzzleState } from "../puzzle-logic";
+import type { PuzzleState } from "../types";
+
+describe("Puzzle Logic", () => {
+  let state: PuzzleState;
+
+  beforeEach(() => {
+    state = { ...initialPuzzleState };
+  });
+
+  describe("Initial State", () => {
+    it("should have correct initial values", () => {
+      expect(state.moveCount).toBe(0);
+      expect(state.hintsUsed).toBe(0);
+      expect(state.isComplete).toBe(false);
+      expect(state.pieces).toHaveLength(0);
+    });
+
+    it("should have correct difficulty", () => {
+      expect(state.difficulty).toBe("3x3");
+    });
+
+    it("should have correct max hints", () => {
+      expect(state.maxHints).toBe(3);
+    });
+  });
+
+  describe("Piece Position Updates", () => {
+    beforeEach(() => {
+      state.pieces = [
+        {
+          id: "piece-1",
+          gridX: 0,
+          gridY: 0,
+          imageUri: "test.jpg",
+          sourceRect: { x: 0, y: 0, width: 100, height: 100 },
+          currentPosition: { x: 0, y: 0 },
+          targetPosition: { x: 0, y: 0 },
+          rotation: 0,
+          isSnapped: false,
+          zIndex: 0,
+        },
+      ];
+    });
+
+    it("should update piece position", () => {
+      const newState = puzzleReducer(state, {
+        type: "UPDATE_PIECE_POSITION",
+        payload: { pieceId: "piece-1", x: 50, y: 50 },
+      });
+
+      expect(newState.pieces[0].currentPosition).toEqual({ x: 50, y: 50 });
+    });
+
+    it("should increment move count on position update", () => {
+      const newState = puzzleReducer(state, {
+        type: "UPDATE_PIECE_POSITION",
+        payload: { pieceId: "piece-1", x: 50, y: 50 },
+      });
+
+      expect(newState.moveCount).toBe(1);
+    });
+  });
+
+  describe("Hints System", () => {
+    beforeEach(() => {
+      state.pieces = [
+        {
+          id: "piece-1",
+          gridX: 0,
+          gridY: 0,
+          imageUri: "test.jpg",
+          sourceRect: { x: 0, y: 0, width: 100, height: 100 },
+          currentPosition: { x: 0, y: 0 },
+          targetPosition: { x: 0, y: 0 },
+          rotation: 0,
+          isSnapped: false,
+          zIndex: 0,
+        },
+      ];
+    });
+
+    it("should increment hints used", () => {
+      const newState = puzzleReducer(state, {
+        type: "USE_HINT",
+      });
+
+      expect(newState.hintsUsed).toBe(1);
+    });
+
+    it("should not use hint if max hints reached", () => {
+      state.hintsUsed = 3;
+
+      const newState = puzzleReducer(state, {
+        type: "USE_HINT",
+      });
+
+      expect(newState.hintsUsed).toBe(3);
+    });
+  });
+
+  describe("Sound & Haptics", () => {
+    it("should toggle sound", () => {
+      expect(state.soundEnabled).toBe(true);
+
+      const newState = puzzleReducer(state, {
+        type: "TOGGLE_SOUND",
+      });
+
+      expect(newState.soundEnabled).toBe(false);
+    });
+
+    it("should toggle haptics", () => {
+      expect(state.hapticsEnabled).toBe(true);
+
+      const newState = puzzleReducer(state, {
+        type: "TOGGLE_HAPTICS",
+      });
+
+      expect(newState.hapticsEnabled).toBe(false);
+    });
+  });
+
+  describe("Reset Puzzle", () => {
+    beforeEach(() => {
+      state.pieces = [
+        {
+          id: "piece-1",
+          gridX: 0,
+          gridY: 0,
+          imageUri: "test.jpg",
+          sourceRect: { x: 0, y: 0, width: 100, height: 100 },
+          currentPosition: { x: 100, y: 100 },
+          targetPosition: { x: 0, y: 0 },
+          rotation: 45,
+          isSnapped: true,
+          zIndex: 1,
+        },
+      ];
+      state.moveCount = 10;
+      state.hintsUsed = 2;
+      state.isComplete = true;
+    });
+
+    it("should reset puzzle state", () => {
+      const newState = puzzleReducer(state, {
+        type: "RESET_PUZZLE",
+      });
+
+      expect(newState.moveCount).toBe(0);
+      expect(newState.hintsUsed).toBe(0);
+      expect(newState.isComplete).toBe(false);
+      expect(newState.pieces[0].isSnapped).toBe(false);
+      expect(newState.pieces[0].rotation).toBe(0);
+    });
+  });
+
+  describe("Completion Check", () => {
+    it("should mark puzzle complete when all pieces snapped", () => {
+      state.pieces = [
+        {
+          id: "piece-1",
+          gridX: 0,
+          gridY: 0,
+          imageUri: "test.jpg",
+          sourceRect: { x: 0, y: 0, width: 100, height: 100 },
+          currentPosition: { x: 0, y: 0 },
+          targetPosition: { x: 0, y: 0 },
+          rotation: 0,
+          isSnapped: true,
+          zIndex: 0,
+        },
+      ];
+
+      const newState = puzzleReducer(state, {
+        type: "CHECK_COMPLETION",
+      });
+
+      expect(newState.isComplete).toBe(true);
+      expect(newState.endTime).not.toBeNull();
+    });
+
+    it("should not mark incomplete if pieces remain", () => {
+      state.pieces = [
+        {
+          id: "piece-1",
+          gridX: 0,
+          gridY: 0,
+          imageUri: "test.jpg",
+          sourceRect: { x: 0, y: 0, width: 100, height: 100 },
+          currentPosition: { x: 0, y: 0 },
+          targetPosition: { x: 0, y: 0 },
+          rotation: 0,
+          isSnapped: false,
+          zIndex: 0,
+        },
+      ];
+
+      const newState = puzzleReducer(state, {
+        type: "CHECK_COMPLETION",
+      });
+
+      expect(newState.isComplete).toBe(false);
+    });
+  });
+});

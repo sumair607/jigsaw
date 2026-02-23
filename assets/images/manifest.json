@@ -1,0 +1,864 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-02-09",
+  "categories": {
+    "nature": {
+      "name": "Nature",
+      "emoji": "\ud83c\udf3f",
+      "imageCount": 8,
+      "images": [
+        {
+          "id": "nature-00",
+          "filename": "nature-00.jpg",
+          "title": "Nature Puzzle 1",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "nature"
+          ]
+        },
+        {
+          "id": "nature-01",
+          "filename": "nature-01.jpg",
+          "title": "Nature Puzzle 2",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "nature"
+          ]
+        },
+        {
+          "id": "nature-02",
+          "filename": "nature-02.jpg",
+          "title": "Nature Puzzle 3",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "nature"
+          ]
+        },
+        {
+          "id": "nature-03",
+          "filename": "nature-03.jpg",
+          "title": "Nature Puzzle 4",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "nature"
+          ]
+        },
+        {
+          "id": "nature-04",
+          "filename": "nature-04.jpg",
+          "title": "Nature Puzzle 5",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "nature"
+          ]
+        },
+        {
+          "id": "nature-05",
+          "filename": "nature-05.jpg",
+          "title": "Nature Puzzle 6",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "nature"
+          ]
+        },
+        {
+          "id": "nature-06",
+          "filename": "nature-06.jpg",
+          "title": "Nature Puzzle 7",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "nature"
+          ]
+        },
+        {
+          "id": "nature-07",
+          "filename": "nature-07.jpg",
+          "title": "Nature Puzzle 8",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "nature"
+          ]
+        }
+      ]
+    },
+    "cities": {
+      "name": "Cities",
+      "emoji": "\ud83c\udfd9\ufe0f",
+      "imageCount": 8,
+      "images": [
+        {
+          "id": "cities-00",
+          "filename": "cities-00.jpg",
+          "title": "Cities Puzzle 1",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "cities"
+          ]
+        },
+        {
+          "id": "cities-01",
+          "filename": "cities-01.jpg",
+          "title": "Cities Puzzle 2",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "cities"
+          ]
+        },
+        {
+          "id": "cities-02",
+          "filename": "cities-02.jpg",
+          "title": "Cities Puzzle 3",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "cities"
+          ]
+        },
+        {
+          "id": "cities-03",
+          "filename": "cities-03.jpg",
+          "title": "Cities Puzzle 4",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "cities"
+          ]
+        },
+        {
+          "id": "cities-04",
+          "filename": "cities-04.jpg",
+          "title": "Cities Puzzle 5",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "cities"
+          ]
+        },
+        {
+          "id": "cities-05",
+          "filename": "cities-05.jpg",
+          "title": "Cities Puzzle 6",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "cities"
+          ]
+        },
+        {
+          "id": "cities-06",
+          "filename": "cities-06.jpg",
+          "title": "Cities Puzzle 7",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "cities"
+          ]
+        },
+        {
+          "id": "cities-07",
+          "filename": "cities-07.jpg",
+          "title": "Cities Puzzle 8",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "cities"
+          ]
+        }
+      ]
+    },
+    "animals": {
+      "name": "Animals",
+      "emoji": "\ud83e\udd81",
+      "imageCount": 8,
+      "images": [
+        {
+          "id": "animals-00",
+          "filename": "animals-00.jpg",
+          "title": "Animals Puzzle 1",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "animals"
+          ]
+        },
+        {
+          "id": "animals-01",
+          "filename": "animals-01.jpg",
+          "title": "Animals Puzzle 2",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "animals"
+          ]
+        },
+        {
+          "id": "animals-02",
+          "filename": "animals-02.jpg",
+          "title": "Animals Puzzle 3",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "animals"
+          ]
+        },
+        {
+          "id": "animals-03",
+          "filename": "animals-03.jpg",
+          "title": "Animals Puzzle 4",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "animals"
+          ]
+        },
+        {
+          "id": "animals-04",
+          "filename": "animals-04.jpg",
+          "title": "Animals Puzzle 5",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "animals"
+          ]
+        },
+        {
+          "id": "animals-05",
+          "filename": "animals-05.jpg",
+          "title": "Animals Puzzle 6",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "animals"
+          ]
+        },
+        {
+          "id": "animals-06",
+          "filename": "animals-06.jpg",
+          "title": "Animals Puzzle 7",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "animals"
+          ]
+        },
+        {
+          "id": "animals-07",
+          "filename": "animals-07.jpg",
+          "title": "Animals Puzzle 8",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "animals"
+          ]
+        }
+      ]
+    },
+    "art": {
+      "name": "Art",
+      "emoji": "\ud83c\udfa8",
+      "imageCount": 8,
+      "images": [
+        {
+          "id": "art-00",
+          "filename": "art-00.jpg",
+          "title": "Art Puzzle 1",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "art"
+          ]
+        },
+        {
+          "id": "art-01",
+          "filename": "art-01.jpg",
+          "title": "Art Puzzle 2",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "art"
+          ]
+        },
+        {
+          "id": "art-02",
+          "filename": "art-02.jpg",
+          "title": "Art Puzzle 3",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "art"
+          ]
+        },
+        {
+          "id": "art-03",
+          "filename": "art-03.jpg",
+          "title": "Art Puzzle 4",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "art"
+          ]
+        },
+        {
+          "id": "art-04",
+          "filename": "art-04.jpg",
+          "title": "Art Puzzle 5",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "art"
+          ]
+        },
+        {
+          "id": "art-05",
+          "filename": "art-05.jpg",
+          "title": "Art Puzzle 6",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "art"
+          ]
+        },
+        {
+          "id": "art-06",
+          "filename": "art-06.jpg",
+          "title": "Art Puzzle 7",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "art"
+          ]
+        },
+        {
+          "id": "art-07",
+          "filename": "art-07.jpg",
+          "title": "Art Puzzle 8",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "art"
+          ]
+        }
+      ]
+    },
+    "kids": {
+      "name": "Kids",
+      "emoji": "\ud83c\udf88",
+      "imageCount": 8,
+      "images": [
+        {
+          "id": "kids-00",
+          "filename": "kids-00.jpg",
+          "title": "Kids Puzzle 1",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "kids"
+          ]
+        },
+        {
+          "id": "kids-01",
+          "filename": "kids-01.jpg",
+          "title": "Kids Puzzle 2",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "kids"
+          ]
+        },
+        {
+          "id": "kids-02",
+          "filename": "kids-02.jpg",
+          "title": "Kids Puzzle 3",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "kids"
+          ]
+        },
+        {
+          "id": "kids-03",
+          "filename": "kids-03.jpg",
+          "title": "Kids Puzzle 4",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "kids"
+          ]
+        },
+        {
+          "id": "kids-04",
+          "filename": "kids-04.jpg",
+          "title": "Kids Puzzle 5",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "kids"
+          ]
+        },
+        {
+          "id": "kids-05",
+          "filename": "kids-05.jpg",
+          "title": "Kids Puzzle 6",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "kids"
+          ]
+        },
+        {
+          "id": "kids-06",
+          "filename": "kids-06.jpg",
+          "title": "Kids Puzzle 7",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "kids"
+          ]
+        },
+        {
+          "id": "kids-07",
+          "filename": "kids-07.jpg",
+          "title": "Kids Puzzle 8",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "kids"
+          ]
+        }
+      ]
+    },
+    "abstract": {
+      "name": "Abstract",
+      "emoji": "\ud83c\udf00",
+      "imageCount": 8,
+      "images": [
+        {
+          "id": "abstract-00",
+          "filename": "abstract-00.jpg",
+          "title": "Abstract Puzzle 1",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "abstract"
+          ]
+        },
+        {
+          "id": "abstract-01",
+          "filename": "abstract-01.jpg",
+          "title": "Abstract Puzzle 2",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "abstract"
+          ]
+        },
+        {
+          "id": "abstract-02",
+          "filename": "abstract-02.jpg",
+          "title": "Abstract Puzzle 3",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "abstract"
+          ]
+        },
+        {
+          "id": "abstract-03",
+          "filename": "abstract-03.jpg",
+          "title": "Abstract Puzzle 4",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "abstract"
+          ]
+        },
+        {
+          "id": "abstract-04",
+          "filename": "abstract-04.jpg",
+          "title": "Abstract Puzzle 5",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "abstract"
+          ]
+        },
+        {
+          "id": "abstract-05",
+          "filename": "abstract-05.jpg",
+          "title": "Abstract Puzzle 6",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "abstract"
+          ]
+        },
+        {
+          "id": "abstract-06",
+          "filename": "abstract-06.jpg",
+          "title": "Abstract Puzzle 7",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "abstract"
+          ]
+        },
+        {
+          "id": "abstract-07",
+          "filename": "abstract-07.jpg",
+          "title": "Abstract Puzzle 8",
+          "photographer": "Photo by Jigsaw Puzzle Pro",
+          "source": "sample",
+          "difficulty_levels": [
+            "2x2",
+            "3x3",
+            "4x4",
+            "6x6",
+            "8x8"
+          ],
+          "tags": [
+            "abstract"
+          ]
+        }
+      ]
+    }
+  }
+}

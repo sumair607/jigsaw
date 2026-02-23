@@ -1,0 +1,250 @@
+{
+  "version": "1.0.0",
+  "categories": [
+    {
+      "id": "nature",
+      "name": "Nature",
+      "icon": "🌿",
+      "description": "Beautiful natural landscapes and scenery"
+    },
+    {
+      "id": "cities",
+      "name": "Cities",
+      "icon": "🏙️",
+      "description": "Urban landscapes and city views"
+    },
+    {
+      "id": "animals",
+      "name": "Animals",
+      "icon": "🦁",
+      "description": "Wildlife and animal photography"
+    },
+    {
+      "id": "art",
+      "name": "Art",
+      "icon": "🎨",
+      "description": "Artistic and abstract designs"
+    },
+    {
+      "id": "kids",
+      "name": "Kids",
+      "icon": "🎈",
+      "description": "Colorful and fun designs for children"
+    },
+    {
+      "id": "abstract",
+      "name": "Abstract",
+      "icon": "🌈",
+      "description": "Abstract patterns and designs"
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "puzzle_001",
+      "name": "Mountain Peak",
+      "category": "nature",
+      "imageId": "img_001",
+      "source": "shutterstock",
+      "license": "royalty-free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "A stunning mountain landscape with snow-capped peaks"
+    },
+    {
+      "id": "puzzle_002",
+      "name": "Ocean Waves",
+      "category": "nature",
+      "imageId": "img_002",
+      "source": "shutterstock",
+      "license": "royalty-free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Peaceful ocean waves at sunset"
+    },
+    {
+      "id": "puzzle_003",
+      "name": "Forest Path",
+      "category": "nature",
+      "imageId": "img_003",
+      "source": "shutterstock",
+      "license": "royalty-free",
+      "difficulties": ["2x2", "3x3", "4x4"],
+      "description": "A winding path through a lush forest"
+    },
+    {
+      "id": "puzzle_004",
+      "name": "Paris Skyline",
+      "category": "cities",
+      "imageId": "img_004",
+      "source": "shutterstock",
+      "license": "royalty-free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "The iconic Paris skyline with Eiffel Tower"
+    },
+    {
+      "id": "puzzle_005",
+      "name": "Tokyo Lights",
+      "category": "cities",
+      "imageId": "img_005",
+      "source": "shutterstock",
+      "license": "royalty-free",
+      "difficulties": ["2x2", "3x3", "4x4"],
+      "description": "Vibrant Tokyo city lights at night"
+    },
+    {
+      "id": "puzzle_006",
+      "name": "Lion Portrait",
+      "category": "animals",
+      "imageId": "img_006",
+      "source": "shutterstock",
+      "license": "royalty-free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Majestic lion in the savanna"
+    },
+    {
+      "id": "puzzle_007",
+      "name": "Butterfly Garden",
+      "category": "animals",
+      "imageId": "img_007",
+      "source": "shutterstock",
+      "license": "royalty-free",
+      "difficulties": ["2x2", "3x3"],
+      "description": "Colorful butterflies in a garden"
+    },
+    {
+      "id": "puzzle_008",
+      "name": "Modern Art",
+      "category": "art",
+      "imageId": "img_008",
+      "source": "shutterstock",
+      "license": "royalty-free",
+      "difficulties": ["3x3", "4x4", "6x6"],
+      "description": "Contemporary abstract art piece"
+    },
+    {
+      "id": "puzzle_009",
+      "name": "Rainbow Colors",
+      "category": "kids",
+      "imageId": "img_009",
+      "source": "shutterstock",
+      "license": "royalty-free",
+      "difficulties": ["2x2", "3x3"],
+      "description": "Fun and colorful rainbow design"
+    },
+    {
+      "id": "puzzle_010",
+      "name": "Geometric Patterns",
+      "category": "abstract",
+      "imageId": "img_010",
+      "source": "shutterstock",
+      "license": "royalty-free",
+      "difficulties": ["3x3", "4x4", "6x6"],
+      "description": "Intricate geometric pattern design"
+    },
+    {
+      "id": "puzzle_011",
+      "name": "Valley Sunrise",
+      "category": "nature",
+      "imageId": "img_011",
+      "source": "default",
+      "license": "free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Demo puzzle image from local assets"
+    },
+    {
+      "id": "puzzle_012",
+      "name": "Downtown Walk",
+      "category": "cities",
+      "imageId": "img_012",
+      "source": "default",
+      "license": "free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Demo puzzle image from local assets"
+    },
+    {
+      "id": "puzzle_013",
+      "name": "Wild Focus",
+      "category": "animals",
+      "imageId": "img_013",
+      "source": "default",
+      "license": "free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Demo puzzle image from local assets"
+    },
+    {
+      "id": "puzzle_014",
+      "name": "Canvas Dream",
+      "category": "art",
+      "imageId": "img_014",
+      "source": "default",
+      "license": "free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Demo puzzle image from local assets"
+    },
+    {
+      "id": "puzzle_015",
+      "name": "Playful Colors",
+      "category": "kids",
+      "imageId": "img_015",
+      "source": "default",
+      "license": "free",
+      "difficulties": ["2x2", "3x3", "4x4"],
+      "description": "Demo puzzle image from local assets"
+    },
+    {
+      "id": "puzzle_016",
+      "name": "Shape Flow",
+      "category": "abstract",
+      "imageId": "img_016",
+      "source": "default",
+      "license": "free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Demo puzzle image from local assets"
+    },
+    {
+      "id": "puzzle_017",
+      "name": "Forest Light",
+      "category": "nature",
+      "imageId": "img_017",
+      "source": "default",
+      "license": "free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Demo puzzle image from local assets"
+    },
+    {
+      "id": "puzzle_018",
+      "name": "Urban Glow",
+      "category": "cities",
+      "imageId": "img_018",
+      "source": "default",
+      "license": "free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Demo puzzle image from local assets"
+    },
+    {
+      "id": "puzzle_019",
+      "name": "Safari Moment",
+      "category": "animals",
+      "imageId": "img_019",
+      "source": "default",
+      "license": "free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Demo puzzle image from local assets"
+    },
+    {
+      "id": "puzzle_020",
+      "name": "Gallery Splash",
+      "category": "art",
+      "imageId": "img_020",
+      "source": "default",
+      "license": "free",
+      "difficulties": ["2x2", "3x3", "4x4", "6x6"],
+      "description": "Demo puzzle image from local assets"
+    }
+  ],
+  "dailyChallenge": {
+    "enabled": true,
+    "rotationInterval": "daily",
+    "resetTime": "00:00:00",
+    "rewardHints": 1,
+    "rewardStreakBonus": true
+  }
+}

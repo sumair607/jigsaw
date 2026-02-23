@@ -1,0 +1,24 @@
+ad banner
+
+Jigsaw Puzzle Proca-app-pub-9970688716348020~3457773820
+Follow the banner implementation guide to integrate the SDK. You'll specify ad type, size and placement when you integrate the code using this ad unit ID:
+Jigsaw Puzzle Pro - Home Bannerca-app-pub-9970688716348020/9493203715
+
+interstitial
+
+Jigsaw Puzzle Proca-app-pub-9970688716348020~3457773820
+Follow the interstitial implementation guide to integrate the SDK. You'll specify ad type and placement when you integrate the code using this ad unit ID:
+Jigsaw Puzzle Pro - Completion Interstitialca-app-pub-9970688716348020/3178572226
+
+Ad unit name 
+
+Jigsaw Puzzle Pro - Hint Rewarded
+Ad format
+
+Rewarded
+Ad unit ID
+
+ca-app-pub-9970688716348020/7852314405
+Reward settings 
+
+1 Reward
