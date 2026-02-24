@@ -15,9 +15,11 @@ const CACHE_DIR = `${FileSystem.cacheDirectory}jigsaw-puzzles/`;
 const MANIFEST_STORAGE_KEY = "jigsaw_puzzle_manifest";
 const CACHE_INDEX_KEY = "jigsaw_cache_index";
 const FREE_IMAGES_PER_CATEGORY = 10;
-const FREE_DIFFICULTIES: Array<"3x3" | "4x4" | "6x6" | "8x8"> = [
+const FREE_DIFFICULTIES: Array<"2x2" | "3x3" | "4x4" | "5x5" | "6x6" | "8x8"> = [
+  "2x2",
   "3x3",
   "4x4",
+  "5x5",
   "6x6",
   "8x8",
 ];

@@ -485,6 +485,7 @@ export function getDifficultyLabel(difficulty: Difficulty): string {
     "2x2": "Easy (4 pieces)",
     "3x3": "Medium (9 pieces)",
     "4x4": "Hard (16 pieces)",
+    "5x5": "Advanced (25 pieces)",
     "6x6": "Expert (36 pieces)",
     "8x8": "Master (64 pieces)",
   };
@@ -499,6 +500,7 @@ export function estimateCompletionTime(difficulty: Difficulty): string {
     "2x2": "1-2 min",
     "3x3": "3-5 min",
     "4x4": "8-12 min",
+    "5x5": "12-18 min",
     "6x6": "20-30 min",
     "8x8": "45-60 min",
   };

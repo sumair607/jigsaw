@@ -4,7 +4,7 @@ import type { ImageSourcePropType } from "react-native";
  * Core type definitions for the Jigsaw Puzzle game engine
  */
 
-export type Difficulty = "2x2" | "3x3" | "4x4" | "6x6" | "8x8";
+export type Difficulty = "2x2" | "3x3" | "4x4" | "5x5" | "6x6" | "8x8";
 
 export interface GridSize {
   rows: number;
@@ -16,6 +16,7 @@ export const GRID_SIZES: Record<Difficulty, GridSize> = {
   "2x2": { rows: 2, cols: 2, totalPieces: 4 },
   "3x3": { rows: 3, cols: 3, totalPieces: 9 },
   "4x4": { rows: 4, cols: 4, totalPieces: 16 },
+  "5x5": { rows: 5, cols: 5, totalPieces: 25 },
   "6x6": { rows: 6, cols: 6, totalPieces: 36 },
   "8x8": { rows: 8, cols: 8, totalPieces: 64 },
 };

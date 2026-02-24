@@ -8,10 +8,11 @@ import { loadPuzzleProgress, updateUserStatsAfterCompletion, updateStreak } from
 
 export const UNLOCK_REQUIREMENTS: Record<Difficulty, { requiredDifficulty: Difficulty | null; requiredCount: number }> = {
   "2x2": { requiredDifficulty: null, requiredCount: 0 },
-  "3x3": { requiredDifficulty: "2x2", requiredCount: 3 },
-  "4x4": { requiredDifficulty: "3x3", requiredCount: 5 },
-  "6x6": { requiredDifficulty: "4x4", requiredCount: 10 },
-  "8x8": { requiredDifficulty: "6x6", requiredCount: 15 },
+  "3x3": { requiredDifficulty: null, requiredCount: 0 },
+  "4x4": { requiredDifficulty: "3x3", requiredCount: 3 },
+  "5x5": { requiredDifficulty: "4x4", requiredCount: 3 },
+  "6x6": { requiredDifficulty: "5x5", requiredCount: 3 },
+  "8x8": { requiredDifficulty: "6x6", requiredCount: 3 },
 };
 
 export async function isDifficultyUnlocked(difficulty: Difficulty): Promise<boolean> {
@@ -27,7 +28,7 @@ export async function isDifficultyUnlocked(difficulty: Difficulty): Promise<bool
 }
 
 export async function getUnlockedDifficulties(): Promise<Difficulty[]> {
-  const difficulties: Difficulty[] = ["2x2", "3x3", "4x4", "6x6", "8x8"];
+  const difficulties: Difficulty[] = ["2x2", "3x3", "4x4", "5x5", "6x6", "8x8"];
   const unlocked: Difficulty[] = [];
 
   for (const diff of difficulties) {
@@ -45,7 +46,7 @@ export async function getProgressToNextUnlock(currentDifficulty: Difficulty): Pr
   required: number;
   remaining: number;
 } | null> {
-  const difficulties: Difficulty[] = ["2x2", "3x3", "4x4", "6x6", "8x8"];
+  const difficulties: Difficulty[] = ["2x2", "3x3", "4x4", "5x5", "6x6", "8x8"];
   const currentIndex = difficulties.indexOf(currentDifficulty);
   
   if (currentIndex === -1 || currentIndex === difficulties.length - 1) {

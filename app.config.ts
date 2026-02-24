@@ -46,6 +46,14 @@ const config: ExpoConfig = {
     predictiveBackGestureEnabled: false,
     package: env.androidPackage,
     permissions: ["POST_NOTIFICATIONS"],
+    blockedPermissions: [
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    ],
     intentFilters: [
       {
         action: "VIEW",
@@ -71,6 +79,9 @@ const config: ExpoConfig = {
       "expo-build-properties",
       {
         android: {
+          compileSdkVersion: 35,
+          targetSdkVersion: 35,
+          minSdkVersion: 24,
           buildArchs: ["armeabi-v7a", "arm64-v8a"],
         },
       },
@@ -80,19 +91,6 @@ const config: ExpoConfig = {
       {
         androidAppId: "ca-app-pub-3940256099942544~3347511713",
         iosAppId: "ca-app-pub-3940256099942544~1458002511",
-      },
-    ],
-    [
-      "expo-audio",
-      {
-        microphonePermission: "Allow $(PRODUCT_NAME) to access your microphone.",
-      },
-    ],
-    [
-      "expo-video",
-      {
-        supportsBackgroundPlayback: true,
-        supportsPictureInPicture: true,
       },
     ],
     [

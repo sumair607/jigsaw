@@ -26,7 +26,7 @@ export default function QuickPlayScreen() {
       const puzzles = await getAllPuzzleImages();
       if (puzzles.length > 0) {
         const randomPuzzle = puzzles[Math.floor(Math.random() * puzzles.length)];
-        const difficulties = ["2x2", "3x3", "4x4"];
+        const difficulties = ["2x2", "3x3", "4x4", "5x5", "6x6"];
         const randomDifficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
         
         setPuzzleConfig({

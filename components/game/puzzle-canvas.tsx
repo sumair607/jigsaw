@@ -29,7 +29,7 @@ import * as Haptics from "expo-haptics";
 interface PuzzleCanvasProps {
   imageUri: string;
   imageId: string;
-  difficulty: "2x2" | "3x3" | "4x4" | "6x6" | "8x8";
+  difficulty: "2x2" | "3x3" | "4x4" | "5x5" | "6x6" | "8x8";
   puzzleId: string;
   onCompletion?: (stats: {
     timeSpent: number;

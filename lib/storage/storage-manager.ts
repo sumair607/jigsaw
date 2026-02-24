@@ -191,7 +191,7 @@ export async function updateUserStatsAfterCompletion(
     stats.lastPlayedAt = Date.now();
 
     // Update highest difficulty
-    const difficultyOrder = ["2x2", "3x3", "4x4", "6x6", "8x8"];
+    const difficultyOrder = ["2x2", "3x3", "4x4", "5x5", "6x6", "8x8"];
     const currentIndex = difficultyOrder.indexOf(
       stats.highestDifficultyCompleted
     );

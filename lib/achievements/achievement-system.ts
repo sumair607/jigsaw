@@ -264,7 +264,7 @@ export function checkAchievementUnlock(
  * Check if one difficulty is higher or equal to another
  */
 function isDifficultyHigherOrEqual(target: Difficulty, current: Difficulty): boolean {
-  const order: Difficulty[] = ["2x2", "3x3", "4x4", "6x6", "8x8"];
+  const order: Difficulty[] = ["2x2", "3x3", "4x4", "5x5", "6x6", "8x8"];
   const targetIndex = order.indexOf(target);
   const currentIndex = order.indexOf(current);
   return currentIndex >= targetIndex;

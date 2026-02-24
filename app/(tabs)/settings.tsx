@@ -17,7 +17,6 @@ import {
   Linking,
   Share,
 } from "react-native";
-import * as FileSystem from "expo-file-system";
 import { ScreenContainer } from "@/components/screen-container";
 import { useColors } from "@/hooks/use-colors";
 import { useColorScheme } from "@/hooks/use-color-scheme";
@@ -27,6 +26,7 @@ import {
   clearAllData,
   exportAllData,
 } from "@/lib/storage/storage-manager";
+import { clearAllCache, getCacheSize } from "@/lib/content/content-manager";
 import { GameSettings } from "@/lib/game-engine/types";
 import * as Haptics from "expo-haptics";
 
@@ -36,7 +36,6 @@ export default function SettingsScreen() {
   const [settings, setSettings] = useState<GameSettings | null>(null);
   const [cacheSize, setCacheSize] = useState(0);
   const [showAbout, setShowAbout] = useState(false);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     loadSettings();
@@ -46,11 +45,10 @@ export default function SettingsScreen() {
     try {
       const gameSettings = await loadGameSettings();
       setSettings(gameSettings);
-      setCacheSize(0); // TODO: Implement cache size calculation
+      const bytes = await getCacheSize();
+      setCacheSize(Math.round(bytes / (1024 * 1024)));
     } catch (error) {
       console.error("Failed to load settings:", error);
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -77,9 +75,7 @@ export default function SettingsScreen() {
           text: "Clear",
           onPress: async () => {
             try {
-              if (FileSystem.cacheDirectory) {
-                await FileSystem.deleteAsync(FileSystem.cacheDirectory, { idempotent: true });
-              }
+              await clearAllCache();
               setCacheSize(0);
               Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
             } catch (error) {
@@ -132,7 +128,7 @@ export default function SettingsScreen() {
   };
 
   const handleRateApp = () => {
-    const PACKAGE_NAME = "space.manus.jigsaw.puzzle.pro";
+    const PACKAGE_NAME = "com.sumair607.jigsawpuzzlepro";
     const url = `market://details?id=${PACKAGE_NAME}`;
     
     Alert.alert(

@@ -159,6 +159,7 @@ export function getSnappingRadius(difficulty: Difficulty): number {
     "2x2": 40,
     "3x3": 35,
     "4x4": 30,
+    "5x5": 27,
     "6x6": 25,
     "8x8": 20,
   };
