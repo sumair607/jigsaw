@@ -111,10 +111,8 @@ android {
         }
         if (hasReleaseSigning) {
             release {
-                def releaseStorePath = MYAPP_UPLOAD_STORE_FILE.startsWith("app/") ?
-                        MYAPP_UPLOAD_STORE_FILE.substring(4) :
-                        MYAPP_UPLOAD_STORE_FILE
-                storeFile file(releaseStorePath)
+                // Keystore is always decoded to upload-keystore.jks in the app folder
+                storeFile file("upload-keystore.jks")
                 storePassword MYAPP_UPLOAD_STORE_PASSWORD
                 keyAlias MYAPP_UPLOAD_KEY_ALIAS
                 keyPassword MYAPP_UPLOAD_KEY_PASSWORD
