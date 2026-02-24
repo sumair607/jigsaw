@@ -43,7 +43,7 @@ jobs:
       - name: Build release APK and AAB
         working-directory: android
         env:
-          MYAPP_UPLOAD_STORE_FILE: app/upload-keystore.jks
+          MYAPP_UPLOAD_STORE_FILE: upload-keystore.jks
           MYAPP_UPLOAD_STORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           MYAPP_UPLOAD_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           MYAPP_UPLOAD_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
