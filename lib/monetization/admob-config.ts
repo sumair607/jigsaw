@@ -14,7 +14,7 @@ import { Platform } from "react-native";
  */
 export const ADMOB_APP_IDS = {
   // Android App ID
-  android: "ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy",
+  android: "ca-app-pub-9970688716348020~3457773820",
   // iOS App ID
   ios: "ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy",
 };
@@ -30,15 +30,15 @@ export const ADMOB_APP_IDS = {
  */
 export const AD_UNIT_IDS = {
   // Banner Ads - Home screen, category screen
-  BANNER_HOME: "ca-app-pub-3940256099942544/6300978111", // Test ID
-  BANNER_CATEGORY: "ca-app-pub-3940256099942544/6300978111", // Test ID
+  BANNER_HOME: "ca-app-pub-9970688716348020/9493203715",
+  BANNER_CATEGORY: "ca-app-pub-9970688716348020/9493203715",
 
   // Interstitial Ads - Between puzzle completions
-  INTERSTITIAL_COMPLETION: "ca-app-pub-3940256099942544/1033173712", // Test ID
+  INTERSTITIAL_COMPLETION: "ca-app-pub-9970688716348020/3178572226",
 
   // Rewarded Ads - For hints, bonus coins
-  REWARDED_HINT: "ca-app-pub-3940256099942544/5224354917", // Test ID
-  REWARDED_COINS: "ca-app-pub-3940256099942544/5224354917", // Test ID
+  REWARDED_HINT: "ca-app-pub-9970688716348020/7852314405",
+  REWARDED_COINS: "ca-app-pub-9970688716348020/7852314405",
 };
 
 /**

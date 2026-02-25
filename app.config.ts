@@ -89,7 +89,7 @@ const config: ExpoConfig = {
     [
       "react-native-google-mobile-ads",
       {
-        androidAppId: "ca-app-pub-3940256099942544~3347511713",
+        androidAppId: "ca-app-pub-9970688716348020~3457773820",
         iosAppId: "ca-app-pub-3940256099942544~1458002511",
       },
     ],

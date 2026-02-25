@@ -15,11 +15,10 @@ import {
 } from "react-native-google-mobile-ads";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// TODO: Replace with your real Ad Unit IDs before production
 const AD_UNIT_IDS = {
-  banner: __DEV__ ? TestIds.BANNER : "ca-app-pub-XXXXX/XXXXX",
-  interstitial: __DEV__ ? TestIds.INTERSTITIAL : "ca-app-pub-XXXXX/XXXXX",
-  rewarded: __DEV__ ? TestIds.REWARDED : "ca-app-pub-XXXXX/XXXXX",
+  banner: __DEV__ ? TestIds.BANNER : "ca-app-pub-9970688716348020/9493203715",
+  interstitial: __DEV__ ? TestIds.INTERSTITIAL : "ca-app-pub-9970688716348020/3178572226",
+  rewarded: __DEV__ ? TestIds.REWARDED : "ca-app-pub-9970688716348020/7852314405",
 };
 
 const STORAGE_KEYS = {
