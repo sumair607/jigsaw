@@ -16,9 +16,9 @@ import {
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const AD_UNIT_IDS = {
-  banner: __DEV__ ? TestIds.BANNER : "ca-app-pub-9970688716348020/9493203715",
-  interstitial: __DEV__ ? TestIds.INTERSTITIAL : "ca-app-pub-9970688716348020/3178572226",
-  rewarded: __DEV__ ? TestIds.REWARDED : "ca-app-pub-9970688716348020/7852314405",
+  banner: __DEV__ ? TestIds.BANNER : "ca-app-pub-3940256099942544/6300978111",
+  interstitial: __DEV__ ? TestIds.INTERSTITIAL : "ca-app-pub-3940256099942544/1033173712",
+  rewarded: __DEV__ ? TestIds.REWARDED : "ca-app-pub-3940256099942544/5224354917",
 };
 
 const STORAGE_KEYS = {
